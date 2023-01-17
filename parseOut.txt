@@ -1,0 +1,117 @@
+Thomas L. Student, CSCI4200, Fall 2022, Parser
+********************************************************************************
+PROGRAM
+    (47 + sum) /         total;
+        Area = (length+width) * 2;
+    C     =          age  - 5 * (D / C);
+    print(C+Area);
+END
+********************
+PROGRAM
+Next token is: PROGRAM_KEYWORD
+Enter <program>
+Next token is: LEFT_PAREN  
+**ERROR** - expected identifer or print statement
+Next token is: INT_LIT     
+**ERROR** - expected identifer or print statement
+Next token is: ADD_OP      
+**ERROR** - expected identifer or print statement
+Next token is: IDENT       
+Enter <assign>
+Next token is: RIGHT_PAREN 
+Exit <assign>
+ 
+Next token is: DIV_OP      
+**ERROR** - expected identifer or print statement
+Next token is: IDENT       
+Enter <assign>
+Next token is: SEMICOLON   
+Exit <assign>
+ 
+Next token is: IDENT       
+Enter <assign>
+Next token is: ASSIGN_OP   
+Next token is: LEFT_PAREN  
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: IDENT       
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: ADD_OP      
+Exit <factor>
+Exit <term>
+Next token is: IDENT       
+Enter <factor>
+Next token is: RIGHT_PAREN 
+Exit <factor>
+Exit <expr>
+Next token is: MULT_OP     
+Exit <factor>
+Next token is: INT_LIT     
+Enter <factor>
+Next token is: SEMICOLON   
+Exit <factor>
+Exit <term>
+Exit <expr>
+Exit <assign>
+ 
+Next token is: IDENT       
+Enter <assign>
+Next token is: ASSIGN_OP   
+Next token is: IDENT       
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: SUB_OP      
+Exit <factor>
+Exit <term>
+Next token is: INT_LIT     
+Enter <factor>
+Next token is: MULT_OP     
+Exit <factor>
+Exit <expr>
+Exit <assign>
+ 
+Next token is: LEFT_PAREN  
+**ERROR** - expected identifer or print statement
+Next token is: IDENT       
+Enter <assign>
+Next token is: DIV_OP      
+Exit <assign>
+ 
+Next token is: IDENT       
+Enter <assign>
+Next token is: RIGHT_PAREN 
+Exit <assign>
+ 
+**ERROR** - expected semicolon   
+Next token is: PRINT_KEYWORD
+Enter <output>
+Next token is: LEFT_PAREN  
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: IDENT       
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: ADD_OP      
+Exit <factor>
+Exit <term>
+Next token is: IDENT       
+Enter <factor>
+Next token is: RIGHT_PAREN 
+Exit <factor>
+Exit <expr>
+Next token is: SEMICOLON   
+Exit <factor>
+Exit <term>
+Exit <expr>
+Exit <output>
+ 
+Next token is: END_KEYWORD 
+Exit <program>
+Parsing of the program is complete!
+********************************************************************************

@@ -1,0 +1,6 @@
+PROGRAM
+    (47 + sum) /         total;
+        Area = (length+width) * 2;
+    C     =          age  - 5 * (D / C);
+    print(C+Area);
+END
